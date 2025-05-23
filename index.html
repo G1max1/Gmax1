@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <!--标题-->
+    <header class="header">
+        <h1>顾晓涵 guxiaohan</h1>
+        <p>扬州|信息工程系|计算机应用网络</p>
+
+    </header>
+    <!--导航-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><img src="images/2.jpg" class="face">史小杰</div>
+            <button class="hbb" id="hbb">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#" class="nav-link">个人介绍</a>
+                <a href="#" class="nav-link">教育背景</a>
+                <a href="#" class="nav-link">旅游日记</a>
+                <a href="#" class="nav-link">兴趣爱好</a>
+                <a href="#" class="nav-link">联系方式</a>
+            </div>
+        </div>
+        <script>
+            const hbb=document.getElementById('hbb');
+            const navlinks=document.querySelector('.nav-links');
+            hbb.addEventListener('click',()=>{
+                hbb.classList.toggle('active');
+                navlinks.classList.toggle('active');
+            })
+        </script>
+
+    </nav>
+    <!--内容区-->
+    <main class="main-content">
+        <div class="primary-content">
+            <div class="content-card">
+                <h2>个人介绍</h2>
+                <p>须知少时凌云志 曾许人间第一流</p>
+            </div>
+            <div class="content-card">
+                <h3>教育背景</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>初中</h4>
+                        <p>2017-2020年 </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>高中</h4>
+                        <p>2020-2023年 </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>大专</h4>
+                        <p>2023-2026年 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-card">
+                <h3>旅游日记</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>2024.12</h4>
+                        <p><img src="images/旅游.jpg"></p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2024.12</h4>
+                        <p><img src="images/旅游 (2).jpg"></p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2024.12</h4>
+                        <p><img src="images/旅游 (3).jpg"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="asiderbar">
+            <div class="content-card">
+                <h3>兴趣爱好</h3>
+                <ul>
+                    <li>唱歌</li>
+                    <li>跳舞</li>
+                    <li>游戏</li>
+                    <li>旅游</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <!--页脚-->
+    <footer>
+        史小杰的联系方式：1887415157
+
+    </footer>
+
+
+</body>
+
+</html>
